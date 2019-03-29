@@ -13,9 +13,8 @@ from PIL import ImageGrab
 def jump():
     for x0 in range(160,250,5):
         px = img[60,x0]
-        print(px[0:1])
-        #default : 247
-        #another : 83~n 
+        #RGB[247,247,247]
+        #장애물이 나올시 RGB값이 
         if (px[0]<=180):
             print("jump \n")
             pg.keyDown('space')
